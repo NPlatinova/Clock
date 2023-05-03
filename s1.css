@@ -1,0 +1,142 @@
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    
+}
+
+.clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    
+    flex-direction: column;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.clock1 {
+position: absolute;
+right: 600px;
+bottom: 520px;
+
+
+}
+
+.clock2 {
+    position: absolute;
+    left: 600px;
+    bottom: 520px;
+    
+    
+    }
+
+.clock img {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: azure;
+    flex-direction: column;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.needle {
+   background-color: black;
+   position: absolute;
+   top: 50% ;
+   left: 50%;
+   height: 55px;
+   width: 3px; 
+   transform-origin: bottom center;
+}
+
+.needle.hour, .needle.hour1, .needle.hour2 {
+    transform: translate(-50%, -100%) rotate(0deg);
+    height: 40px;
+}
+
+.needle.minute, .needle.minute1, .needle.minute2 {
+    transform: translate(-50%, -100%) rotate(0deg);
+    height: 60px;
+    background-color: #aaa;
+}
+
+.needle.second, .needle.second1, .needle.second2 {
+    transform: translate(-50%, -100%) rotate(0deg);
+    height: 70px;
+    background-color: #82a9ba;
+}
+
+.center-point {
+    background-color: #141212;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    position: absolute;
+}
+
+.center-point::after{
+    content: "";
+    background-color: black;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    position: absolute;
+}
+
+.b{
+    position: absolute;
+    left: 600px;
+    top: 460px;
+    }
+
+.NY{
+position: absolute;
+right: 600px;
+top: 460px;
+}
+
+.date, .date1, .date2 {
+    color: #aaa;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    
+
+}
+.time1 {
+    position: absolute;
+    right: 600px;
+    bottom: 505px;
+
+}
+
+.time2 {
+    position: absolute;
+    left: 600px;
+    bottom: 505px;
+
+}
+
+.date1 {
+    position: absolute;
+    right: 600px;
+    bottom: 490px;
+
+}
+
+.date2 {
+    position: absolute;
+    left: 600px;
+    bottom: 490px
+}
